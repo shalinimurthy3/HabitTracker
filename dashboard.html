@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h2>Habit Tracker</h2>
+
+        <div class="nav-links">
+            <a href="dashboard.html">Home</a>
+            <a href="progress.html">My Progress</a>
+            <a href="index.html">Logout</a>
+        </div>
+    </nav>
+
+    <main class="dashboard">
+
+        <!-- Welcome Section -->
+        <section class="welcome-card">
+            <h1>Welcome Back!</h1>
+            <p>Small steps every day lead to big changes.</p>
+        </section>
+
+        <!-- Daily Habits -->
+        <section class="dashboard-card">
+            <h2>My Daily Habits</h2>
+            <p class="card-description">
+                Here are the habits you want to complete today.
+            </p>
+
+            <div class="habit-item">
+                <input type="checkbox" id="habit1">
+                <label for="habit1">Drink 2 litres of water</label>
+            </div>
+
+            <div class="habit-item">
+                <input type="checkbox" id="habit2">
+                <label for="habit2">Exercise for 30 minutes</label>
+            </div>
+
+            <div class="habit-item">
+                <input type="checkbox" id="habit3">
+                <label for="habit3">Read for 20 minutes</label>
+            </div>
+
+            <div class="habit-item">
+                <input type="checkbox" id="habit4">
+                <label for="habit4">Meditate for 10 minutes</label>
+            </div>
+        </section>
+
+        <!-- Add Habit -->
+        <section class="dashboard-card">
+            <h2>Add a New Habit</h2>
+            <p class="card-description">
+                Enter a habit you want to include in your routine.
+            </p>
+
+            <form action="#">
+                <input type="text"
+                       placeholder="Enter habit name"
+                       aria-label="New habit name">
+
+                <button type="submit">Add Habit</button>
+            </form>
+        </section>
+
+        <!-- Progress Summary -->
+        <section class="dashboard-card">
+            <h2>Today's Progress</h2>
+            <p class="card-description">
+                Keep going and try to complete all your habits!
+            </p>
+
+            <div class="progress-info">
+                <span>Daily completion</span>
+                <span>0%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+
+            <p class="progress-count">0 out of 4 habits completed</p>
+        </section>
+
+    </main>
+
+    <footer class="dashboard-footer">
+        <p>Habit Tracker | Build good habits every day</p>
+    </footer>
+
+</body>
+</html>
